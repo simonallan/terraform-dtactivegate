@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+    	{
+            "Sid": "terra-dev-policy",
+            "Effect": "Allow",
+            "Action": [
+                "AmazonEC2FullAccess:",
+        	"AmazonS3FullAccess:",
+                "AmazonDynamoDBFullAccess:",
+                "CloudwatchFullAccess:",
+                "IAMFullAccess:"
+            ],
+            "Resource":  [
+                "*"
+            ],
+	    "Condition": ""
+        }
+    ]
+}
+	
