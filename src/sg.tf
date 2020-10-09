@@ -12,7 +12,7 @@ resource "aws_security_group" "allow_dynatrace_traffic_inbound" {
     from_port   = var.dynatrace_ports.activegate
     to_port     = var.dynatrace_ports.activegate
     protocol    = var.dynatrace_protocol
-    cidr_blocks = var.dynatrace_ext_in_CIDR
+    cidr_blocks = var.dynatrace_CIDR-ext-in
   }
 
   tags = merge(

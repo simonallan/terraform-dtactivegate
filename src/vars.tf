@@ -24,3 +24,16 @@ variable "dynatrace_ports" {
     activegate = 443
   }
 }
+
+variable "dynatrace_protocol" {
+  description - "Default protocol used for Dynatrace traffic"
+  type = string
+  default = "tcp"
+}
+
+variable "dynatrace_CIDR-ext-in" {
+  description - "Default CIDR used for external Dynatrace traffic ingress"
+  type = string
+  default = "["0.0.0.0/0"]"
+}
+
