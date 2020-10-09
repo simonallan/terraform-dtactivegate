@@ -1,5 +1,6 @@
-data "aws_ami" "ubuntu1804" {
+data "aws_ami" "ubuntu-linux-1804" {
   most_recent = true
+  owners      = ["099720109477"] # Canonical
   filter {
     name   = "name"
     values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
@@ -8,5 +9,4 @@ data "aws_ami" "ubuntu1804" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
-  owners = ["099720109477"] # Canonical
 }
