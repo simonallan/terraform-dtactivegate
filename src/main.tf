@@ -1,7 +1,7 @@
 provider "aws" {
-  region                  = "eu-west-1"
-  shared_credentials_file = "/home/allan05/.aws/credentials"
-  profile                 = "terra-dev"
+  region                  = var.region
+  shared_credentials_file = var.shared_credentials_file
+  profile                 = var.profile
 }
 
 locals {
@@ -9,8 +9,8 @@ locals {
   common_tags = {
     product     = var.product_name
     environment = var.environment
-    owner       = "websysadmins"
-    contact     = "websysadmins@cancer.org.uk"
+    owner       = var.owner
+    contact     = var.contact
   }
   deployment_name = "${var.product_name}-${var.environment}"
 }

@@ -5,19 +5,20 @@ resource "aws_security_group" "allow_dynatrace_traffic_inbound" {
     from_port   = var.dynatrace_ports.oneagent
     to_port     = var.dynatrace_ports.oneagent
     protocol    = var.dynatrace_protocol
-    cidr_blocks = var.dynatrace_ext_in_CIDR
+    cidr_blocks = [var.dynatrace_CIDR_ext_in]
   }
 
   ingress {
     from_port   = var.dynatrace_ports.activegate
     to_port     = var.dynatrace_ports.activegate
     protocol    = var.dynatrace_protocol
-    cidr_blocks = var.dynatrace_CIDR-ext-in
+    cidr_blocks = [var.dynatrace_CIDR_ext_in]
   }
 
   tags = merge(
     local.common_tags,
     {
-      Name = ${"allow_dynatrace_traffic_inbound"}
+      Name = "allow_dynatrace_traffic_inbound-${var.environment}"
     }
+  )
 }
