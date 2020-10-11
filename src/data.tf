@@ -9,4 +9,5 @@ data "aws_ami" "ubuntu-linux-1804" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
+  # owners = ["099720109477"] # Canonical
 }
