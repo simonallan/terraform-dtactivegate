@@ -1,4 +1,4 @@
-resource "aws_security_group" "allow_dynatrace_traffic_inbound" {
+resource "aws_security_group" "allow_dynatrace_traffic_in" {
   description = "Allow OneAgent traffic inbound"
 
   ingress {
@@ -32,7 +32,7 @@ resource "aws_security_group" "allow_dynatrace_traffic_inbound" {
   tags = merge(
     local.common_tags,
     {
-      Name = "allow_dynatrace_traffic_inbound-${var.environment}"
+      Name = "allow_dynatrace_traffic_in-${var.environment}"
     }
   )
 }

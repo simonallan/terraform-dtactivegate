@@ -6,7 +6,8 @@ resource "aws_instance" "dtactivegate_instance" {
 
   user_data = <<-EOF
               #!/bin/bash
-              echo "Hello World" > index.html
+              echo "__________________\O/_________________________________________" > index.html
+              echo "                  /O\                           hello world :D " > index.html
               nohup busybox httpd -f -p 9999 &
               EOF
 
