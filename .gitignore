@@ -13,6 +13,7 @@
 *.tfstate
 *.tfstate.backup
 *.tfstate.lock.info
+*.plan
 
 # Ignore auth tokens
 token.txt
