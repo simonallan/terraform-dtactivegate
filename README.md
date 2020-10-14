@@ -8,7 +8,7 @@ Included in this repository are Terraform scripts and modules to deploy Dynatrac
 
 **Dynatrace ActiveGate infrastructure for a single shared VPC**
 
-![Dynatrace ActiveGate infrastructure for a single shared VPC](docs/images/cruk-dt-activegate-overview-900x642.png)
+![Dynatrace ActiveGate infrastructure for a single shared VPC](docs/images/cruk-dt-activegate-overview.png)
 
 The official literature [When do I need to install an ActiveGate?](https://www.dynatrace.com/support/help/setup-and-configuration/dynatrace-managed/basic-concepts/overview-of-dynatrace-managed/#dynatrace-managed-cluster) gives further detail on the benefits of deploying AGs while the role of ActiveGates and how they fit into the overall architecture are described in [Scenario 2: Pure Dynatrace Managed setup](https://www.dynatrace.com/support/help/shortlink/managed-deployment-scenarios#scenario-2-pure-dynatrace-managed-setup).
 
