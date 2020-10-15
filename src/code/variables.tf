@@ -18,8 +18,7 @@ variable "vpc_id" {
 
 variable "public_ssh_key" {
   type        = string
-  description = "Public half of the SSH key to import into AWS"
-  default     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDC5/0h7TYLKs1R7M+bg7QHq0h7KyjYwCKM83lypiYhYWY3X45wB8boqHFgjawOgBWOKHwj0LwEDj7wnMiGMNgr3JVPBBa9G+ECdlUh/jU97b+hd+ftEKh0n8g+T4ybEl01kb63xyapTuixCO+4LLUPh8xXusdpkwNsDF6pOQvkmPOuMlfWMaozk2SO1a6L/t7SDtEYxhaCvjXyh+xN29eWWJC8fa5wKCooewdLZggSpASRy8OiAuW4l5HAYj3iVHxjq97eYieJ2eVWTGA7TYn9DWFGWfaNqBd9pC0uy2dZnkNkUF+zaWqp2tobcnxy4STXd6fVralaiirU/levAr/d"
+  default     = ""
 }
 
 variable "product_name" {

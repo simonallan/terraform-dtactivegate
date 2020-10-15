@@ -1,15 +1,3 @@
-# data "terraform_remote_state" "core" {
-#   backend   = "s3"
-#   workspace = terraform.workspace
-
-#   config = {
-#     bucket  = "sa-terraform-tfstate"
-#     key     = "terraform/core.tfstate"
-#     region  = "us-east-1"
-#     profile = "etn-terraform"
-#   }
-# }
-
 data "aws_ami" "ubuntu" {
   most_recent = true
 

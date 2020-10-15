@@ -9,8 +9,6 @@ module "activegate" {
   public_ssh_key = var.public_ssh_key
   min_size       = "3"
   max_size       = "3"
-  # subnet_ids     = [data.terraform_remote_state.gigguru.outputs.public_subnet]
-
   subnet_ids            = ["subnet-0b0fe0e33419ae046", "subnet-0c04f6165ac3f4d9e", "subnet-0f1a4bc124f68f41f"]
   desired_capacity      = "3"
   cooldown              = "300"
