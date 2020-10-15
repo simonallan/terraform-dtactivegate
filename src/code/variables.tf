@@ -1,7 +1,7 @@
 variable "region" {
   type        = string
-  description = "The AWS region to deploy into (e.g. us-east-1)"
-  default     = "eu-west-1"
+  description = "The AWS region to deploy into (e.g. us-east-1) defined in env tfvars"
+  default     = ""
 }
 
 variable "name" {
@@ -9,16 +9,16 @@ variable "name" {
 }
 
 variable "environment" {
-  default   = "dev"
+  default   = ""
 }
 
 variable "vpc_id" {
-  default  = "vpc-77403d1f"
+  default  = ""
 }
 
 variable "public_ssh_key" {
   type        = string
-  default     = "cruk-lz-adm"
+  default     = ""
 }
 
 variable "product_name" {
