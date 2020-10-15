@@ -18,7 +18,7 @@ variable "vpc_id" {
 
 variable "public_ssh_key" {
   type        = string
-  default     = ""
+  default     = "cruk-lz-adm"
 }
 
 variable "product_name" {
