@@ -4,6 +4,7 @@
 
 Dynatrace ActiveGates are deployed into AWS VPCs to function as a proxy between Dynatrace OneAgent agents and the Dynatrace Managed Cluster. Dynatrace agents collect performance and service metrics from EC2 instances and send these as messages to be ingested for analysis by the Dynatrace Cluster. AGs (ActiveGates) play a key role in buffering, compressing and encrypting these messages before routing them to the correct endpoints.
 
+
 Included in this repository are Terraform scripts and modules to deploy Dynatrace Environment ActiveGates into CRUK's AWS environments. By deploying three instances into subnets in the Shared VPCs we will be able to share these resources between all accounts using a shared VPC.
 
 **Dynatrace ActiveGate infrastructure for a single shared VPC**
