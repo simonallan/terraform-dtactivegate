@@ -16,6 +16,10 @@ variable "vpc_id" {
   default  = ""
 }
 
+variable "subnet_id" {
+  default = ""
+}
+
 variable "public_ssh_key" {
   type        = string
   default     = ""
