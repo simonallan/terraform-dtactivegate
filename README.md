@@ -15,7 +15,7 @@ The official literature [When do I need to install an ActiveGate?](https://www.d
 
 ## Installation
 
-* Clone the repository https://github.com/CRUKorg/cruk_activity_management_web_service.git
+* Clone the repository https://github.com/CRUKorg/cruk-dt-activegate.git
 
 * Ensure Terraform version is greater than v0.12.20
 
