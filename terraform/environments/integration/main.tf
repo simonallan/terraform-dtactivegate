@@ -1,5 +1,5 @@
 module "activegate" {
-  source = "../modules/activegate_asg"
+  source = "../../modules/activegate_asg"
 
   prefix         = "activegate"
   name           = "activegate-${var.environment}"
