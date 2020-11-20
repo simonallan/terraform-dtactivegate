@@ -9,11 +9,11 @@ variable "name" {
 }
 
 variable "environment" {
-  default   = ""
+  default = ""
 }
 
 variable "vpc_id" {
-  default  = ""
+  default = ""
 }
 
 variable "subnet_id" {
@@ -21,8 +21,7 @@ variable "subnet_id" {
 }
 
 variable "public_ssh_key" {
-  type        = string
-  default     = ""
+  type    = string
 }
 
 variable "product_name" {

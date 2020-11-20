@@ -1,20 +1,20 @@
 module "activegate" {
   source = "../../modules/activegate_asg"
 
-  prefix         = "activegate"
-  name           = "activegate-${var.environment}"
-  amis           = data.aws_ami.ubuntu
-  environment    = var.environment
-  public_ssh_key = var.public_ssh_key
-  min_size       = "3"
-  max_size       = "3"
-  subnet_ids            = ["var.subnet_ids"]
-  desired_capacity      = "3"
-  cooldown              = "300"
-  instance_type         = "t2.micro"
-  region                = var.region
-  vpc_id                = var.vpc_id
-  allowed_cidr          = ["0.0.0.0/0"]
+  prefix           = "activegate"
+  name             = "activegate-${var.environment}"
+  amis             = data.aws_ami.ubuntu
+  environment      = var.environment
+  public_ssh_key   = var.public_ssh_key
+  min_size         = "3"
+  max_size         = "3"
+  subnet_ids       = ["var.subnet_ids"]
+  desired_capacity = "3"
+  cooldown         = "300"
+  instance_type    = "t2.micro"
+  region           = var.region
+  vpc_id           = var.vpc_id
+  allowed_cidr     = ["0.0.0.0/0"]
   # keys_update_frequency = "5 * * * *"
 
   # eip = "${aws_eip.activegate.public_ip}"

@@ -10,14 +10,3 @@ data "template_file" "user_data" {
     additional_user_data_script = var.additional_user_data_script
   }
 }
-
-# locals {
-#   # Common tags to be assigned to all resources
-#   common_tags = {
-#     product     = var.product_name
-#     environment = var.environment
-#     owner       = var.owner
-#     contact     = var.contact
-#   }
-#   deployment_name = "${var.product_name}-${var.environment}"
-# }
