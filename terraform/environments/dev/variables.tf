@@ -16,12 +16,12 @@ variable "vpc_id" {
   default = ""
 }
 
-variable "subnet_id" {
+variable "subnet_ids" {
   default = ""
 }
 
 variable "public_ssh_key" {
-  type    = string
+  type = string
 }
 
 variable "product_name" {

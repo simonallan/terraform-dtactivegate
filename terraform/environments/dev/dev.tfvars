@@ -1,5 +1,5 @@
 environment    = "dev"
-vpc_id         = "vpc-0c1225ee624b73af2" # Shared VPC
-region         = "eu-west-1"
-public_ssh_key = "terra-dev"
-subnet_id      = ["subnet-025b0913002e02d69", "subnet-08b4ea25b1b2ba8de"] # fictional id's for now
+vpc_id         = "vpc-06013a4903b8308da" # Simon's Dev VPC
+region         = "eu-west-2"
+public_ssh_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC/9oK/ZiQF9hU+V91b2W/vcec2G7Z3zorapd4BnwIheF2lfGvvNa7oKoEN1hbfDJ/4PXhL8RC8dHgChQolpyeYW4hLenW7WlBURa2QUqjGPJLv+xK5Qr4NRvgFlrDGraHdrwfHvYdbfVPX/qP8rjLnz477lj7heQmeNXNOVgbZJEm3J/uaewXrYjciAYZc7dK9/zRn/l6jzv13LKDRP19RxcRZJDDAdQ6+uSGMw9iBj1AJcsZIYMomlg7CELjiw5AOL4i9+4akLptkvxWzkDqp/wc9pK5sT3+fr5GU4Bp+Gqr0VKO31G2ZQbIaqE+EbB8074OaSKD4zPFs9wxol0co0fFBMXSnmG0ASaTnCHpfUYX5bBIMXPsKHEYWUgmn+bsiWe8m+d5pxHTSpjpvljI9rYKz5nOBpuPgXYzUceNTg1Y077GbEvPjVuSCcE/tt1fFlG0BpJH0trpbos8uc4vGgKQ3rtTObkvtv3bmkgh7Arz0EuInoTRISJQKJo4qlcIquuJh/cXTYm52KqvgewU34G4nNS9npKpa34bDn66XQcwFVd9ZN12+/wDIOKCxV3nMXKOBBBTqqzkP2STGYxUnVgOouTR9MK5zH8spJQEqLKsJRFuDaJ20OV9xWWR2hmbU8hHVXn9J2vniKYu9ZaVBfQlNwe9Z1aW9O+2e/ZWE4w== allan05@K1N0CV03B448029"
+subnet_ids     = ["subnet-03ec7dc73f305df6b", "subnet-0aef2d678a1784914"] # Simon's public dev subnets

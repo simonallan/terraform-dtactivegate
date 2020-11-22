@@ -1,15 +1,18 @@
 module "activegate" {
   source = "../../modules/activegate_asg"
 
-  prefix           = "activegate"
-  name             = "activegate-${var.environment}"
-  amis             = data.aws_ami.ubuntu
-  environment      = var.environment
-  public_ssh_key   = var.public_ssh_key
-  min_size         = "3"
-  max_size         = "3"
-  subnet_ids       = ["var.subnet_ids"]
-  desired_capacity = "3"
+  prefix         = "activegate"
+  name           = "activegate-${var.environment}"
+  amis           = data.aws_ami.ubuntu
+  environment    = var.environment
+  public_ssh_key = var.public_ssh_key
+  min_size       = "2"
+  max_size       = "2"
+  #count          = length(var.subnet_ids)
+  #subnet_ids     = var.subnet_ids[count.index]
+  #subnet_ids     = ["var.subnet_ids"]
+  subnet_ids     = ["subnet-03ec7dc73f305df6b", "subnet-0aef2d678a1784914"]
+  desired_capacity = "2"
   cooldown         = "300"
   instance_type    = "t2.micro"
   region           = var.region
