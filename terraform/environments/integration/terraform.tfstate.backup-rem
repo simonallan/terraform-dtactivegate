@@ -1,0 +1,434 @@
+{
+  "version": 4,
+  "terraform_version": "0.13.4",
+  "serial": 6,
+  "lineage": "33559f4f-eb08-1db8-0576-5c444acb4aae",
+  "outputs": {
+    "eip_public_ip": {
+      "value": "18.133.105.231",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "data",
+      "type": "aws_ami",
+      "name": "ubuntu",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "architecture": "x86_64",
+            "arn": "arn:aws:ec2:eu-west-2::image/ami-0820357ff5cf2333d",
+            "block_device_mappings": [
+              {
+                "device_name": "/dev/sda1",
+                "ebs": {
+                  "delete_on_termination": "true",
+                  "encrypted": "false",
+                  "iops": "0",
+                  "snapshot_id": "snap-08886b8dd265b236b",
+                  "volume_size": "8",
+                  "volume_type": "gp2"
+                },
+                "no_device": "",
+                "virtual_name": ""
+              },
+              {
+                "device_name": "/dev/sdb",
+                "ebs": {},
+                "no_device": "",
+                "virtual_name": "ephemeral0"
+              },
+              {
+                "device_name": "/dev/sdc",
+                "ebs": {},
+                "no_device": "",
+                "virtual_name": "ephemeral1"
+              }
+            ],
+            "creation_date": "2020-11-23T22:20:57.000Z",
+            "description": "Canonical, Ubuntu, 18.04 LTS, amd64 bionic image build on 2020-11-23",
+            "executable_users": null,
+            "filter": [
+              {
+                "name": "name",
+                "values": [
+                  "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"
+                ]
+              },
+              {
+                "name": "root-device-type",
+                "values": [
+                  "ebs"
+                ]
+              },
+              {
+                "name": "virtualization-type",
+                "values": [
+                  "hvm"
+                ]
+              }
+            ],
+            "hypervisor": "xen",
+            "id": "ami-0820357ff5cf2333d",
+            "image_id": "ami-0820357ff5cf2333d",
+            "image_location": "099720109477/ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20201123",
+            "image_owner_alias": null,
+            "image_type": "machine",
+            "kernel_id": null,
+            "most_recent": true,
+            "name": "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20201123",
+            "name_regex": null,
+            "owner_id": "099720109477",
+            "owners": [
+              "099720109477"
+            ],
+            "platform": null,
+            "product_codes": [],
+            "public": true,
+            "ramdisk_id": null,
+            "root_device_name": "/dev/sda1",
+            "root_device_type": "ebs",
+            "root_snapshot_id": "snap-08886b8dd265b236b",
+            "sriov_net_support": "simple",
+            "state": "available",
+            "state_reason": {
+              "code": "UNSET",
+              "message": "UNSET"
+            },
+            "tags": {},
+            "virtualization_type": "hvm"
+          }
+        }
+      ]
+    },
+    {
+      "module": "module.activegate",
+      "mode": "data",
+      "type": "aws_ami",
+      "name": "ubuntu",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "architecture": "x86_64",
+            "arn": "arn:aws:ec2:eu-west-2::image/ami-0820357ff5cf2333d",
+            "block_device_mappings": [
+              {
+                "device_name": "/dev/sda1",
+                "ebs": {
+                  "delete_on_termination": "true",
+                  "encrypted": "false",
+                  "iops": "0",
+                  "snapshot_id": "snap-08886b8dd265b236b",
+                  "volume_size": "8",
+                  "volume_type": "gp2"
+                },
+                "no_device": "",
+                "virtual_name": ""
+              },
+              {
+                "device_name": "/dev/sdb",
+                "ebs": {},
+                "no_device": "",
+                "virtual_name": "ephemeral0"
+              },
+              {
+                "device_name": "/dev/sdc",
+                "ebs": {},
+                "no_device": "",
+                "virtual_name": "ephemeral1"
+              }
+            ],
+            "creation_date": "2020-11-23T22:20:57.000Z",
+            "description": "Canonical, Ubuntu, 18.04 LTS, amd64 bionic image build on 2020-11-23",
+            "executable_users": null,
+            "filter": [
+              {
+                "name": "name",
+                "values": [
+                  "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"
+                ]
+              },
+              {
+                "name": "root-device-type",
+                "values": [
+                  "ebs"
+                ]
+              },
+              {
+                "name": "virtualization-type",
+                "values": [
+                  "hvm"
+                ]
+              }
+            ],
+            "hypervisor": "xen",
+            "id": "ami-0820357ff5cf2333d",
+            "image_id": "ami-0820357ff5cf2333d",
+            "image_location": "099720109477/ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20201123",
+            "image_owner_alias": null,
+            "image_type": "machine",
+            "kernel_id": null,
+            "most_recent": true,
+            "name": "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20201123",
+            "name_regex": null,
+            "owner_id": "099720109477",
+            "owners": [
+              "099720109477"
+            ],
+            "platform": null,
+            "product_codes": [],
+            "public": true,
+            "ramdisk_id": null,
+            "root_device_name": "/dev/sda1",
+            "root_device_type": "ebs",
+            "root_snapshot_id": "snap-08886b8dd265b236b",
+            "sriov_net_support": "simple",
+            "state": "available",
+            "state_reason": {
+              "code": "UNSET",
+              "message": "UNSET"
+            },
+            "tags": {},
+            "virtualization_type": "hvm"
+          }
+        }
+      ]
+    },
+    {
+      "module": "module.activegate",
+      "mode": "data",
+      "type": "template_file",
+      "name": "user_data",
+      "provider": "provider[\"registry.terraform.io/hashicorp/template\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "filename": null,
+            "id": "34a74bddb4213cd9cedab220b02c4fcf37e6967811dfe6b6c863463136ae9f72",
+            "rendered": "#!/usr/bin/env bash\n\n##############\n# Install deps\n##############\n\n# Apt based distro\nif command -v apt-get \u0026\u003e/dev/null; then\n  apt-get update\n  apt-get install python-pip jq -y\n\n# Yum based distro\nelif command -v yum \u0026\u003e/dev/null; then\n  yum update -y\n  # epel provides python-pip \u0026 jq\n  yum install -y epel-release\n  yum install python-pip jq -y\nfi\n\n#####################\n\npip install --upgrade awscli\npip install --upgrade boto3\n\n##############\n\n# Append additional user-data script\nREGION=$(curl -s http://169.254.169.254/latest/dynamic/instance-identity/document | grep region | awk -F\\\" '{print $4}')\nINSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)\naws ec2 associate-address --region $REGION --instance-id $INSTANCE_ID --allocation-id eipalloc-0c40b65c7a8646ecb\n\n",
+            "template": "#!/usr/bin/env bash\n\n##############\n# Install deps\n##############\n\n# Apt based distro\nif command -v apt-get \u0026\u003e/dev/null; then\n  apt-get update\n  apt-get install python-pip jq -y\n\n# Yum based distro\nelif command -v yum \u0026\u003e/dev/null; then\n  yum update -y\n  # epel provides python-pip \u0026 jq\n  yum install -y epel-release\n  yum install python-pip jq -y\nfi\n\n#####################\n\npip install --upgrade awscli\npip install --upgrade boto3\n\n##############\n\n# Append additional user-data script\n${additional_user_data_script}\n",
+            "vars": {
+              "additional_user_data_script": "REGION=$(curl -s http://169.254.169.254/latest/dynamic/instance-identity/document | grep region | awk -F\\\" '{print $4}')\nINSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)\naws ec2 associate-address --region $REGION --instance-id $INSTANCE_ID --allocation-id eipalloc-0c40b65c7a8646ecb\n",
+              "enable_hourly_cron_updates": "false",
+              "keys_update_frequency": "",
+              "s3_bucket_name": "activegate20201130001357502800000002",
+              "s3_bucket_uri": "",
+              "ssh_user": "ubuntu"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_autoscaling_group",
+      "name": "activegate",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": []
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_eip",
+      "name": "activegate",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allocation_id": null,
+            "associate_with_private_ip": null,
+            "association_id": "",
+            "customer_owned_ip": "",
+            "customer_owned_ipv4_pool": "",
+            "domain": "vpc",
+            "id": "eipalloc-0c40b65c7a8646ecb",
+            "instance": "",
+            "network_interface": "",
+            "private_dns": null,
+            "private_ip": "",
+            "public_dns": "ec2-18-133-105-231.eu-west-2.compute.amazonaws.com",
+            "public_ip": "18.133.105.231",
+            "public_ipv4_pool": "amazon",
+            "tags": null,
+            "timeouts": null,
+            "vpc": true
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjoxODAwMDAwMDAwMDAsInJlYWQiOjkwMDAwMDAwMDAwMCwidXBkYXRlIjozMDAwMDAwMDAwMDB9fQ==",
+          "create_before_destroy": true
+        }
+      ]
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_iam_instance_profile",
+      "name": "s3-eip-ssm",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": []
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_iam_role_policy",
+      "name": "s3-eip-ssm",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": []
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_key_pair",
+      "name": "activegate",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:eu-west-2:362553879564:key-pair/activegate-20201130001357051200000001",
+            "fingerprint": "b6:ac:6e:68:9b:a5:d2:48:19:eb:5e:37:67:4b:fa:3c",
+            "id": "activegate-20201130001357051200000001",
+            "key_name": "activegate-20201130001357051200000001",
+            "key_name_prefix": "activegate-",
+            "key_pair_id": "key-063473569b7423b19",
+            "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCADp5tGmR39DC8CFnZ1sdlJZcA4Gt53GQpQrWf0P/u+GC9JzsKmsKn/ZRmwTwZk2LZUvh84B+5Z9M6W2UYBMruwsZWZiHSFXYQtgqcHpVQxBwlUKA6GXgldTzsa41AW3/91SLRgZhThqUFgg08/mtN8AAMGs+L2x4Hg/DIkjka1pwR800TrZxtPy56YXwfX9dA9l+yovPgUd2gp5o22Rg87fgud7oMdeoEQmejsEzMKnDw+G6cijhuGrUTJsZjejqs2wUjiIXNe1u8XZzcC1MdkgzHtffz9OMTOx6UWy3hWyIgHVx1h/IGZyAv3cMeMlJWxJwuvaGlOgjnwwwIhXGb",
+            "tags": null
+          },
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ==",
+          "create_before_destroy": true
+        }
+      ]
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_kms_key",
+      "name": "mykey",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:kms:eu-west-2:362553879564:key/b2190834-24e1-4760-bd7a-e02a1dbc1753",
+            "customer_master_key_spec": "SYMMETRIC_DEFAULT",
+            "deletion_window_in_days": 10,
+            "description": "This key is used to encrypt ssh key objects for activegate host held in s3 bucket",
+            "enable_key_rotation": false,
+            "id": "b2190834-24e1-4760-bd7a-e02a1dbc1753",
+            "is_enabled": true,
+            "key_id": "b2190834-24e1-4760-bd7a-e02a1dbc1753",
+            "key_usage": "ENCRYPT_DECRYPT",
+            "policy": "{\"Id\":\"key-default-1\",\"Statement\":[{\"Action\":\"kms:*\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::362553879564:root\"},\"Resource\":\"*\",\"Sid\":\"Enable IAM User Permissions\"}],\"Version\":\"2012-10-17\"}",
+            "tags": null
+          },
+          "private": "bnVsbA==",
+          "create_before_destroy": true
+        }
+      ]
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_launch_configuration",
+      "name": "as_conf",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": []
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "activegate",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": "private",
+            "arn": "arn:aws:s3:::activegate20201130001357502800000002",
+            "bucket": "activegate20201130001357502800000002",
+            "bucket_domain_name": "activegate20201130001357502800000002.s3.amazonaws.com",
+            "bucket_prefix": "activegate",
+            "bucket_regional_domain_name": "activegate20201130001357502800000002.s3.eu-west-2.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": false,
+            "grant": [],
+            "hosted_zone_id": "Z3GKZC51ZF0DB4",
+            "id": "activegate20201130001357502800000002",
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "policy": null,
+            "region": "eu-west-2",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [
+              {
+                "rule": [
+                  {
+                    "apply_server_side_encryption_by_default": [
+                      {
+                        "kms_master_key_id": "arn:aws:kms:eu-west-2:362553879564:key/b2190834-24e1-4760-bd7a-e02a1dbc1753",
+                        "sse_algorithm": "aws:kms"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "tags": {
+              "Name": "activegate",
+              "Terraform": "true"
+            },
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          },
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.activegate.aws_kms_key.mykey"
+          ],
+          "create_before_destroy": true
+        }
+      ]
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "activegate-ingress",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": []
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "activegate_all_egress",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": []
+    },
+    {
+      "module": "module.activegate",
+      "mode": "managed",
+      "type": "aws_security_group_rule",
+      "name": "oneagent-ingress",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": []
+    }
+  ]
+}
