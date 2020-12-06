@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# *** Change this to the desired name of the Cloudformation stack of
+# your Pipeline (*not* the stack name of your app)
+# Based on github.com/symphoniacloud/github-codepipeline/
+
+# Provide a firendly stack name (lower-case letters and hyphens only)
+CODEPIPELINE_STACK_NAME="dtactivegate-ci"
+
+# Indicates which json parameter file to reference during deploy
+ENVIRONMENT="int"
+
+if [ -z ${1} ]
+then
+	echo "PIPELINE CREATION FAILED!"
+        echo "Pass your Github personal access token as the first argument"
+	exit 1
+fi
+
+set -eu
+
+aws cloudformation create-stack \
+        --capabilities CAPABILITY_IAM \
+        --stack-name $CODEPIPELINE_STACK_NAME \
+        --template-body file://ci-pipeline.template
+        --parameters file:///environments/$ENVIRONMENT/dtactivevagte-ci-params.json
+        --tags Key=Name,Value=$CODEPIPELINE_STACK_NAME,Key=Env,Value=$ENVIRONMENT
