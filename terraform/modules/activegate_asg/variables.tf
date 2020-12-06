@@ -70,6 +70,7 @@ variable "user_data_file" {
 variable "public_ssh_key" {
   type        = string
   description = "Public half of the SSH key to import into AWS"
+  default = ""
 }
 
 # aws_autoscaling_group variables

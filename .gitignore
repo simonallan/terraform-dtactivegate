@@ -27,3 +27,6 @@ token.txt
 
 # Logs
 *.log
+
+# Development files
+.wip-files/

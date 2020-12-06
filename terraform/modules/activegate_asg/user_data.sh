@@ -24,11 +24,5 @@ pip install --upgrade boto3
 
 ##############
 
-cat <<"EOF" 
-#!/bin/bash
-echo "__________________O/________________/|___ _ _ \n ~(*~*)~ hello world :D" > index.html
-nohup busybox httpd -f -p 9999 &
-EOF
-
-# Append addition user-data script
+# Append additional user-data script
 ${additional_user_data_script}

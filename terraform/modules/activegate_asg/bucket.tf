@@ -1,5 +1,5 @@
 resource "aws_kms_key" "mykey" {
-  description             = "his key is used to encrypt ssh key objects for activegate host held in s3 bucket"
+  description             = "This key is used to encrypt ssh key objects for activegate host held in s3 bucket"
   deletion_window_in_days = 10
 
   # policy = "${data.aws_iam_policy_document.mykmspolicy.json}"

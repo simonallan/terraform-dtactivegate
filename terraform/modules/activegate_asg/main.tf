@@ -61,12 +61,5 @@ resource "aws_autoscaling_group" "activegate" {
     value               = "true"
     propagate_at_launch = true
   }
-
-  # tags = merge(
-  #   local.common_tags,
-  #   {
-  #     Name = "${local.deployment_name}"
-  #   }
-  # )
 }
 
