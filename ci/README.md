@@ -61,7 +61,12 @@ A Docker image should download and execute. When prompted enter your AD user nam
 * CD to the root of the `ci` directory and run the ci-pipeline-deploy script, supplying your Github personal access token.
 
 ```Shell
+sh ./ci-pipeline-deploy a123456b7c890d12345example
 
+# Sample output
+{
+    "StackId": "arn:aws:cloudformation:eu-west-2:123456789012:stack/dtactivegate-ci/b5772b80-382a-11eb-8bc5-02ab5a3e1414"
+}
 ```
 
 On successful initialisation the stack ARN will be output to the command line. Use this to locate your stack in the AWS [CloudFormation console](https://eu-west-2.console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks?filteringText=&filteringStatus=active&viewNested=true&hideStacks=false)
