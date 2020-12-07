@@ -1,0 +1,30 @@
+[
+    {
+      "ParameterKey": "GitHubOAuthToken",
+      "ParameterValue": "${1}"
+    },
+    {
+      "ParameterKey": "OutputBucketName",
+      "ParameterValue": "dtactivegate-code"
+    },
+    {
+      "ParameterKey": "QSS3BucketRegion",
+      "ParameterValue": "eu-west-2"
+    },
+    {
+      "ParameterKey": "QSS3KeyPrefix",
+      "ParameterValue": "dtactivegate/"
+    },
+    {
+      "ParameterKey": "VPCId",
+      "ParameterValue": "vpc-0ed78d1d0d9b9015e"
+    },
+    {
+      "ParameterKey": "VPCCidrRange",
+      "ParameterValue": "172.20.0.0/18"
+    },
+    {
+      "ParameterKey": "SubnetIds",
+      "ParameterValue": "subnet-0133a1b6a752f6d33, subnet-0163e0360a91727b5, subnet-0cf378548f5ab6b3c"
+    }
+  ]
